@@ -11,7 +11,9 @@
       <table class="layout-table" cellspacing="0" cellpadding="0">
         <tr>
           <td class="sidebar" valign="top">
-            <img src="assets/hero.gif" alt="入江慎吾 顔写真" class="hero-image">
+            <div class="hero-image">
+              <img src="assets/hero.webp" alt="入江慎吾の顔写真">
+            </div>
             <div class="counter-box">
               <div class="counter-title">☆ あなたは</div>
               <div class="counter-digits" id="visit-counter">00012345</div>
@@ -36,7 +38,7 @@
               <li><a href="#links">リンク集</a></li>
             </ul>
             <div class="banner-box">
-              <img src="assets/under_construction.gif" alt="工事中" class="banner-img">
+              <div class="banner-img" aria-hidden="true"></div>
               <div class="banner-text">ページ制作中！</div>
             </div>
           </td>
@@ -61,7 +63,7 @@
                 <tr>
                   <td>
                     <a href="https://solo.onl/" target="_blank" rel="noopener">
-                      <img src="assets/bnr_solo.gif" alt="SOLO" class="banner-btn">
+                      <span class="banner-btn banner-btn--solo">SOLO</span>
                     </a>
                   </td>
                   <td class="banner-caption">
@@ -71,7 +73,7 @@
                 <tr>
                   <td>
                     <a href="https://startpack.shingoirie.com/" target="_blank" rel="noopener">
-                      <img src="assets/bnr_startpack.gif" alt="Startpack" class="banner-btn">
+                      <span class="banner-btn banner-btn--startpack">Startpack</span>
                     </a>
                   </td>
                   <td class="banner-caption">
@@ -81,7 +83,7 @@
                 <tr>
                   <td>
                     <a href="https://lofi.shingoirie.com/" target="_blank" rel="noopener">
-                      <img src="assets/bnr_lofi.gif" alt="Lofi" class="banner-btn">
+                      <span class="banner-btn banner-btn--lofi">Lofi</span>
                     </a>
                   </td>
                   <td class="banner-caption">
@@ -91,7 +93,7 @@
                 <tr>
                   <td>
                     <a href="https://menta.work" target="_blank" rel="noopener">
-                      <img src="assets/bnr_menta.gif" alt="MENTA" class="banner-btn">
+                      <span class="banner-btn banner-btn--menta">MENTA</span>
                     </a>
                   </td>
                   <td class="banner-caption">
@@ -187,8 +189,9 @@
               <div class="media-grid">
                 <div class="media-card">
                   <div class="media-title">Youtube</div>
-                  <a href="https://www.youtube.com/watch?v=8xJ3lkFu5hY" target="_blank" rel="noopener">
-                    <img src="assets/thumb_youtube.gif" alt="YouTube動画" class="media-thumb">
+                  <a href="https://www.youtube.com/watch?v=8xJ3lkFu5hY" target="_blank" rel="noopener" class="media-thumb">
+                    <span class="media-thumb__icon">▶</span>
+                    <span class="media-thumb__label">動画を見る</span>
                   </a>
                   <p class="media-desc">個人開発やサービスづくりのヒントを語った動画です。</p>
                 </div>
@@ -209,8 +212,8 @@
                 <p class="consulting-lead">
                   Webサービス、スマホアプリ開発の相談からモックアップまで！お気軽にどうぞ♪
                 </p>
-                <a href="https://solo.onl/lancers_irie" target="_blank" rel="noopener" class="consulting-link">
-                  <img src="assets/bnr_consult.gif" alt="ご相談はこちら" class="consulting-banner">
+                <a href="https://solo.onl/lancers_irie" target="_blank" rel="noopener" class="consulting-banner">
+                  <span class="consulting-banner__label">ご相談はこちら</span>
                 </a>
                 <p class="consulting-note">
                   ※ ちょっとした一言メッセージでもOK。掲示板でも相談受け付けます！
@@ -224,7 +227,7 @@
                 本物のCGI掲示板は準備中ですが、ブラウザ内で足あとを残せる仮設ノートを置いておきます。
               </p>
               <div class="construction-note">
-                <img src="assets/guestbook_work.gif" alt="Coming soon" class="construction-img">
+                <div class="construction-img" aria-hidden="true"></div>
                 <p>正式版は別途公開予定。それまでは下のフォームから一言どうぞ！</p>
               </div>
               <form class="guestbook-form" id="guestbook-form">
@@ -257,6 +260,32 @@
                     <a href="https://solo.onl/" target="_blank" rel="noopener">SOLO公式サイト</a><br>
                     <a href="https://startpack.shingoirie.com/" target="_blank" rel="noopener">Startpack</a><br>
                     <a href="https://lofi.shingoirie.com/" target="_blank" rel="noopener">Lofiで作業用BGM♪</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="link-cat">相互リンク</td>
+                  <td>
+                    <div class="mutual-link">
+                      <p class="mutual-link__message">
+                        相互リンクいつでも大歓迎です！リンクを貼ったら
+                        <a href="#guestbook">掲示板</a>か
+                        <a href="mailto:hello@shingoirie.com">メール</a>で教えてくださいね。
+                      </p>
+                      <div class="mutual-link__banner">
+                        <div class="link-banner" aria-hidden="true">
+                          <span class="link-banner__title">Shingo's 90s Home</span>
+                          <span class="link-banner__url">https://shingoirie.com/</span>
+                        </div>
+                        <div class="code-box">
+                          &lt;a href="https://shingoirie.com/" target="_blank" rel="noopener"&gt;<br>
+                          &nbsp;&nbsp;&lt;img src="https://shingoirie.com/assets/banner-88x31.gif" alt="入江慎吾のホームページ"&gt;<br>
+                          &lt;/a&gt;
+                        </div>
+                      </div>
+                      <p class="mutual-link__note">
+                        ※ バナー画像は後日公開予定。それまではテキストリンクでOKです☆
+                      </p>
+                    </div>
                   </td>
                 </tr>
               </table>

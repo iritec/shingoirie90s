@@ -35,12 +35,57 @@ body {
 }
 
 .hero-image {
-  display: block;
   width: 100%;
-  height: auto;
+  height: 160px;
   margin-bottom: 12px;
-  border: 3px solid #00ffff;
-  background: #222;
+  border: 4px double #00ffff;
+  background-color: #03002a;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(1.1) contrast(1.05);
+}
+
+.hero-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 25%, rgba(0, 255, 255, 0.35), transparent 55%),
+    radial-gradient(circle at 80% 20%, rgba(255, 0, 170, 0.3), transparent 60%),
+    radial-gradient(circle at 40% 80%, rgba(255, 255, 0, 0.25), transparent 65%),
+    repeating-linear-gradient(190deg, rgba(255, 255, 255, 0.12) 0, rgba(255, 255, 255, 0.12) 4px, transparent 4px, transparent 8px);
+  mix-blend-mode: screen;
+  opacity: 0.65;
+  animation: heroScan 3.2s linear infinite;
+}
+
+.hero-image::after {
+  content: "Shingo  Irie";
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 18px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: #fff9ff;
+  text-shadow: 3px 3px 0 #12003a, 0 0 12px #00ffff;
+  border: 2px solid rgba(0, 255, 255, 0.8);
+  background: rgba(0, 0, 60, 0.6);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+}
+
+@keyframes heroScan {
+  0% { transform: translateY(-100%); }
+  50% { transform: translateY(0%); }
+  100% { transform: translateY(100%); }
 }
 
 .counter-box {
@@ -130,9 +175,11 @@ body {
 
 .banner-img {
   width: 120px;
-  height: auto;
+  height: 60px;
   border: 2px solid #fffb00;
-  background: #000;
+  background:
+    repeating-linear-gradient(45deg, #ff00ff 0, #ff00ff 6px, #ffff00 6px, #ffff00 12px);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
 }
 
 .banner-text {
@@ -202,11 +249,70 @@ marquee {
 }
 
 .banner-btn {
-  width: 140px;
-  height: 40px;
-  background: #330066;
-  border: 2px outset #ff00aa;
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 46px;
+  padding: 0 12px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px double #ffffff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.45);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+}
+
+.banner-btn::before,
+.banner-btn::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border: 1px dashed rgba(255, 255, 255, 0.65);
+  pointer-events: none;
+}
+
+.banner-btn::after {
+  inset: auto 12px 6px 12px;
+  height: 6px;
+  border: none;
+  background: repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.45) 0, rgba(255, 255, 255, 0.45) 4px, transparent 4px, transparent 8px);
+  opacity: 0.75;
+}
+
+.banner-btn--solo {
+  background:
+    linear-gradient(135deg, rgba(0, 201, 255, 0.92), rgba(146, 254, 157, 0.92)),
+    repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0.2) 6px, transparent 6px, transparent 12px);
+  color: #002244;
+}
+
+.banner-btn--startpack {
+  background:
+    linear-gradient(135deg, rgba(255, 81, 47, 0.92), rgba(240, 152, 25, 0.92)),
+    repeating-linear-gradient(60deg, rgba(0, 0, 0, 0.16) 0, rgba(0, 0, 0, 0.16) 5px, transparent 5px, transparent 10px);
+}
+
+.banner-btn--lofi {
+  background:
+    linear-gradient(135deg, rgba(142, 45, 226, 0.95), rgba(74, 0, 224, 0.95)),
+    repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.18) 0, rgba(0, 0, 0, 0.18) 4px, transparent 4px, transparent 12px);
+}
+
+.banner-btn--menta {
+  background:
+    linear-gradient(135deg, rgba(0, 198, 255, 0.92), rgba(0, 114, 255, 0.92)),
+    repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.18) 0, rgba(0, 0, 0, 0.18) 7px, transparent 7px, transparent 14px);
+}
+
+.banner-btn:hover {
+  filter: brightness(1.12);
+  text-decoration: none;
 }
 
 .banner-caption {
@@ -282,9 +388,38 @@ marquee {
 .media-thumb {
   display: block;
   width: 100%;
-  height: auto;
+  height: 120px;
   border: 2px solid #ff00aa;
-  background: #222;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255, 0, 170, 0.6), transparent 55%),
+    radial-gradient(circle at 70% 60%, rgba(0, 255, 255, 0.55), transparent 60%),
+    linear-gradient(135deg, #1b0036, #110063);
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.media-thumb__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 42px;
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 0, 170, 0.7);
+}
+
+.media-thumb__label {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  color: #ffecff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2px 8px;
+  border-radius: 10px;
 }
 
 .media-desc {
@@ -315,12 +450,31 @@ marquee {
 }
 
 .consulting-banner {
+  display: inline-block;
   width: 200px;
   height: 60px;
   border: 3px outset #ff00aa;
   margin: 12px auto;
-  display: block;
-  background: #440088;
+  background:
+    repeating-linear-gradient(-45deg, #440088 0, #440088 8px, #ff00ff 8px, #ff00ff 16px);
+  color: #ffe5ff;
+  text-decoration: none;
+  position: relative;
+  box-shadow: 0 0 10px rgba(255, 0, 180, 0.5);
+}
+
+.consulting-banner:hover {
+  filter: brightness(1.1);
+}
+
+.consulting-banner__label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 .consulting-note {
@@ -336,9 +490,27 @@ marquee {
 
 .construction-img {
   width: 140px;
-  height: auto;
+  height: 80px;
   border: 2px dotted #ff00aa;
-  background: #000;
+  background:
+    repeating-linear-gradient(45deg, rgba(255, 255, 0, 0.8) 0, rgba(255, 255, 0, 0.8) 8px, rgba(255, 0, 0, 0.8) 8px, rgba(255, 0, 0, 0.8) 16px),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+  position: relative;
+  margin: 0 auto 8px auto;
+}
+
+.construction-img::after {
+  content: "工事中";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: #000000;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2px 8px;
+  border: 1px solid #000;
+  letter-spacing: 2px;
 }
 
 .links-table {
@@ -360,6 +532,66 @@ marquee {
 
 .links-table a {
   color: #0044ff;
+}
+
+.mutual-link {
+  background: rgba(255, 255, 255, 0.85);
+  border: 2px dashed #ff99ff;
+  padding: 8px;
+  font-size: 12px;
+  color: #330066;
+}
+
+.mutual-link__message {
+  margin: 0 0 8px 0;
+}
+
+.mutual-link__banner {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.link-banner {
+  width: 176px;
+  height: 62px;
+  border: 3px double #ff00ff;
+  background:
+    repeating-linear-gradient(135deg, rgba(255, 0, 170, 0.85) 0, rgba(255, 0, 170, 0.85) 6px, rgba(0, 200, 255, 0.85) 6px, rgba(0, 200, 255, 0.85) 12px);
+  color: #1a0033;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(255, 0, 170, 0.5);
+}
+
+.link-banner__title {
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.link-banner__url {
+  font-size: 10px;
+}
+
+.code-box {
+  background: #1a003b;
+  color: #00ffcc;
+  border: 2px inset #ff00aa;
+  padding: 6px 8px;
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  line-height: 1.4;
+  min-width: 220px;
+}
+
+.mutual-link__note {
+  margin: 8px 0 0 0;
+  font-size: 11px;
+  color: #6600aa;
 }
 
 .guestbook-form {

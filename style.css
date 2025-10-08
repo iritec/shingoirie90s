@@ -1,0 +1,458 @@
+body {
+  margin: 0;
+  font-family: "MS PGothic", "Osaka", "Hiragino Kaku Gothic ProN", sans-serif;
+  color: #111;
+  background-color: #000033;
+}
+
+.bg-tiles {
+  background-image:
+    radial-gradient(circle at 10% 10%, rgba(0, 255, 255, 0.45), transparent 35%),
+    radial-gradient(circle at 80% 20%, rgba(255, 0, 180, 0.4), transparent 40%),
+    radial-gradient(circle at 30% 80%, rgba(255, 255, 0, 0.4), transparent 45%);
+  background-size: 120px 120px, 160px 160px, 180px 180px;
+  background-repeat: repeat;
+}
+
+.page-wrapper {
+  padding: 24px 0;
+}
+
+.layout-table {
+  margin: 0 auto;
+  width: 760px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 4px double #ff00aa;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar {
+  width: 210px;
+  background: linear-gradient(180deg, #140031 0%, #380058 40%, #57007c 100%);
+  color: #fff0ff;
+  border-right: 4px double #00ffff;
+  padding: 12px;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+  border: 3px solid #00ffff;
+  background: #222;
+}
+
+.counter-box {
+  text-align: center;
+  margin-bottom: 16px;
+  border: 2px dashed #fffb00;
+  padding: 8px 4px;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.bgm-box {
+  margin-bottom: 16px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px dotted #00ffff;
+  padding: 8px;
+}
+
+.bgm-button {
+  width: 100%;
+  background: linear-gradient(90deg, #00ffff, #ff00ff);
+  border: 2px outset #fff;
+  color: #120031;
+  font-weight: bold;
+  padding: 6px 0;
+  cursor: pointer;
+}
+
+.bgm-button:hover {
+  filter: brightness(1.1);
+}
+
+.bgm-note {
+  font-size: 11px;
+  margin: 6px 0 0 0;
+  color: #ffe4ff;
+}
+
+.counter-title {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.counter-digits {
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  color: #00ff9a;
+  margin: 4px 0;
+}
+
+.nav-banner {
+  background: linear-gradient(90deg, #ff009e, #ffea00);
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  padding: 6px 0;
+  margin-bottom: 8px;
+  border: 2px inset #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-list {
+  list-style: square;
+  padding-left: 20px;
+  margin: 0 0 16px 0;
+}
+
+.nav-list li {
+  margin-bottom: 6px;
+}
+
+.nav-list a {
+  color: #fffb00;
+  text-decoration: underline;
+}
+
+.nav-list a:hover {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+.banner-box {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.banner-img {
+  width: 120px;
+  height: auto;
+  border: 2px solid #fffb00;
+  background: #000;
+}
+
+.banner-text {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.content {
+  padding: 18px;
+  color: #180030;
+}
+
+.welcome-box {
+  background: rgba(255, 255, 255, 0.9);
+  border: 3px ridge #ff00aa;
+  padding: 12px;
+  margin-bottom: 18px;
+}
+
+marquee {
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg, #2a00aa, #00bcd4);
+  padding: 6px 0;
+  border: 2px ridge #00ffff;
+}
+
+.welcome-lead {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 12px 0;
+}
+
+.update-info {
+  font-size: 12px;
+  text-align: right;
+  color: #9900ff;
+}
+
+.section {
+  margin-bottom: 24px;
+  border: 2px solid #ff00aa;
+  background: rgba(255, 250, 255, 0.9);
+  padding: 12px;
+}
+
+.section h2 {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+  text-align: center;
+  color: #ff00aa;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.section-intro {
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.banner-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.banner-table td {
+  border-bottom: 1px dotted #cc66ff;
+}
+
+.banner-btn {
+  width: 140px;
+  height: 40px;
+  background: #330066;
+  border: 2px outset #ff00aa;
+  display: block;
+}
+
+.banner-caption {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #330066;
+}
+
+.diary-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.diary-table tr:nth-child(even) {
+  background: rgba(200, 220, 255, 0.5);
+}
+
+.diary-table tr:nth-child(odd) {
+  background: rgba(255, 220, 255, 0.5);
+}
+
+.diary-date {
+  width: 110px;
+  font-family: "Courier New", monospace;
+  color: #0000aa;
+  padding: 6px;
+  border-right: 1px dotted #6600cc;
+}
+
+.diary-entry {
+  padding: 6px;
+}
+
+.diary-entry a {
+  color: #0066ff;
+  font-weight: bold;
+}
+
+.media-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.media-list li {
+  margin-bottom: 8px;
+}
+
+.media-list a {
+  color: #0066ff;
+}
+
+.media-grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.media-card {
+  width: 220px;
+  border: 2px groove #00ffff;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 8px;
+}
+
+.media-title {
+  font-weight: bold;
+  text-align: center;
+  color: #ff00aa;
+  margin-bottom: 6px;
+}
+
+.media-thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2px solid #ff00aa;
+  background: #222;
+}
+
+.media-desc {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.note-links {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.note-links li {
+  margin-bottom: 6px;
+}
+
+.consulting-box {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85);
+  border: 3px double #fffb00;
+  padding: 12px;
+}
+
+.consulting-lead {
+  font-size: 14px;
+  font-weight: bold;
+  color: #cc00ff;
+}
+
+.consulting-banner {
+  width: 200px;
+  height: 60px;
+  border: 3px outset #ff00aa;
+  margin: 12px auto;
+  display: block;
+  background: #440088;
+}
+
+.consulting-note {
+  font-size: 12px;
+  color: #444;
+}
+
+.construction-note {
+  text-align: center;
+  font-size: 12px;
+  color: #6600cc;
+}
+
+.construction-img {
+  width: 140px;
+  height: auto;
+  border: 2px dotted #ff00aa;
+  background: #000;
+}
+
+.links-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.links-table td {
+  padding: 6px;
+  border-bottom: 1px dotted #ff66ff;
+}
+
+.link-cat {
+  width: 100px;
+  font-weight: bold;
+  color: #330066;
+}
+
+.links-table a {
+  color: #0044ff;
+}
+
+.guestbook-form {
+  margin: 16px 0;
+  padding: 12px;
+  border: 2px dashed #ff66ff;
+  background: rgba(255, 240, 255, 0.9);
+}
+
+.guestbook-form label {
+  display: block;
+  font-size: 12px;
+  color: #330066;
+  margin-bottom: 8px;
+}
+
+.guestbook-form input,
+.guestbook-form textarea {
+  width: 100%;
+  border: 2px inset #cc00ff;
+  background: #fff;
+  padding: 6px;
+  font-family: inherit;
+  font-size: 13px;
+  color: #330066;
+}
+
+.guestbook-form button {
+  display: block;
+  width: 160px;
+  margin: 10px auto 0 auto;
+  background: linear-gradient(90deg, #ff00ff, #ffff00);
+  color: #220033;
+  font-weight: bold;
+  border: 3px outset #fff;
+  padding: 6px 0;
+  cursor: pointer;
+}
+
+.guestbook-note {
+  font-size: 11px;
+  color: #660099;
+  text-align: center;
+}
+
+.guestbook-entries {
+  list-style: none;
+  margin: 12px 0 0 0;
+  padding: 0;
+}
+
+.guestbook-item {
+  border: 2px groove #ffccff;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.guestbook-name {
+  font-weight: bold;
+  color: #9900ff;
+  margin-right: 6px;
+}
+
+.guestbook-date {
+  font-size: 11px;
+  color: #555;
+}
+
+.guestbook-message {
+  font-size: 12px;
+  margin: 6px 0 0 0;
+  color: #220033;
+  white-space: pre-wrap;
+}
+
+.guestbook-empty {
+  text-align: center;
+  font-size: 12px;
+  color: #660099;
+  border: 1px dashed #ff99ff;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.footer {
+  text-align: center;
+  font-size: 11px;
+  color: #330066;
+  padding: 12px 0 4px 0;
+  border-top: 3px double #ff00aa;
+}
+
+.footer a {
+  color: #ff00aa;
+}

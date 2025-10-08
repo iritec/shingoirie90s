@@ -1,0 +1,396 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>入江慎吾のホームページ（90年代リミックス）</title>
+    <meta name="description" content="個人開発者 入江慎吾の活動を90年代の個人サイト風にまとめました。">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body class="bg-tiles">
+    <div class="page-wrapper">
+      <table class="layout-table" cellspacing="0" cellpadding="0">
+        <tr>
+          <td class="sidebar" valign="top">
+            <img src="assets/hero.gif" alt="入江慎吾 顔写真" class="hero-image">
+            <div class="counter-box">
+              <div class="counter-title">☆ あなたは</div>
+              <div class="counter-digits" id="visit-counter">00012345</div>
+              <div class="counter-title">番目の訪問者さん ☆</div>
+            </div>
+            <div class="bgm-box">
+              <button type="button" class="bgm-button" onclick="toggleBgm()">♪ BGM オン / オフ</button>
+              <audio id="bgm-player" loop preload="auto">
+                <source src="assets/bgm.wav" type="audio/wav">
+              </audio>
+              <p class="bgm-note">※ 音量にご注意ください</p>
+            </div>
+            <div class="nav-banner">▼ メニュー ▼</div>
+            <ul class="nav-list">
+              <li><a href="#welcome">トップページ</a></li>
+              <li><a href="#products">作品コーナー</a></li>
+              <li><a href="#timeline">最新日誌</a></li>
+              <li><a href="#media">メディア掲載</a></li>
+              <li><a href="#videos">動画＆note</a></li>
+              <li><a href="#consulting">ご相談窓口</a></li>
+              <li><a href="#guestbook">掲示板</a></li>
+              <li><a href="#links">リンク集</a></li>
+            </ul>
+            <div class="banner-box">
+              <img src="assets/under_construction.gif" alt="工事中" class="banner-img">
+              <div class="banner-text">ページ制作中！</div>
+            </div>
+          </td>
+          <td class="content" valign="top">
+            <div class="welcome-box" id="welcome">
+              <marquee behavior="alternate" scrollamount="4">
+                ようこそ！入江慎吾のホームページへ☆彡
+              </marquee>
+              <p class="welcome-lead">
+                個人開発で40個以上のサービスを生み出し、MENTAなど複数サービスのヒット＆バイアウトを経験した入江慎吾の活動を、
+                90年代ホームページの雰囲気でまとめてみました。ゆっくりしていってね！
+              </p>
+              <p class="update-info">最終更新日：<span id="last-updated">1997年10月3日</span>（令和Mix）</p>
+            </div>
+
+            <div class="section" id="products">
+              <h2>◆ 作品コーナー ◆</h2>
+              <p class="section-intro">
+                入江が手がけたサービスたちです。各バナーをクリックすると詳細ページが開きます。
+              </p>
+              <table class="banner-table" cellspacing="0" cellpadding="6">
+                <tr>
+                  <td>
+                    <a href="https://solo.onl/" target="_blank" rel="noopener">
+                      <img src="assets/bnr_solo.gif" alt="SOLO" class="banner-btn">
+                    </a>
+                  </td>
+                  <td class="banner-caption">
+                    クリエイターの活動をひとつにまとめるプロフィール作成サービス「SOLO」。
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://startpack.shingoirie.com/" target="_blank" rel="noopener">
+                      <img src="assets/bnr_startpack.gif" alt="Startpack" class="banner-btn">
+                    </a>
+                  </td>
+                  <td class="banner-caption">
+                    個人開発のスタートを支える情報集「Startpack」。
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://lofi.shingoirie.com/" target="_blank" rel="noopener">
+                      <img src="assets/bnr_lofi.gif" alt="Lofi" class="banner-btn">
+                    </a>
+                  </td>
+                  <td class="banner-caption">
+                    カフェ気分で集中したい人に、ローファイBGMと共に作業できる「Lofi」。
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="https://menta.work" target="_blank" rel="noopener">
+                      <img src="assets/bnr_menta.gif" alt="MENTA" class="banner-btn">
+                    </a>
+                  </td>
+                  <td class="banner-caption">
+                    オンラインメンターサービス「MENTA」。個人開発から生まれ、後にバイアウト達成！
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="section" id="timeline">
+              <h2>◆ 最新日誌（タイムライン） ◆</h2>
+              <p class="section-intro">
+                近ごろの出来事を、管理人のひとり言スタイルでまとめています。Xの投稿にもジャンプできます。
+              </p>
+              <table class="diary-table" cellspacing="0" cellpadding="4">
+                <tr>
+                  <td class="diary-date">1997/10/03</td>
+                  <td class="diary-entry">
+                    MENTAの売却ストーリーや、その後のチャレンジについて語りました。
+                    <a href="https://x.com/iritec_jp/status/1975316556721889292" target="_blank" rel="noopener">→ 詳しくはXへ</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="diary-date">1997/09/12</td>
+                  <td class="diary-entry">
+                    連続起業家としての道のりと、個人開発の楽しさを連投。
+                    <a href="https://x.com/iritec_jp/status/1963453072799404333" target="_blank" rel="noopener">→ Xで読む</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="diary-date">1997/09/11</td>
+                  <td class="diary-entry">
+                    Startpackで集めたノウハウを公開中。仲間も募集中です♪
+                    <a href="https://x.com/iritec_jp/status/1963780894369730997" target="_blank" rel="noopener">→ Xで読む</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="diary-date">1997/08/21</td>
+                  <td class="diary-entry">
+                    個人開発仲間からの応援の声、ありがたや～！
+                    <a href="https://x.com/iritec_jp/status/1953680893455089679" target="_blank" rel="noopener">→ Xで読む</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="diary-date">1997/08/18</td>
+                  <td class="diary-entry">
+                    MENTAをはじめとしたサービス運営の裏側をスレッドで紹介しました。
+                    <a href="https://x.com/iritec_jp/status/1954703235136291153" target="_blank" rel="noopener">→ Xで読む</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="diary-date">1997/08/15</td>
+                  <td class="diary-entry">
+                    技術系イベントでの登壇レポート。緊張したけど楽しかった！
+                    <a href="https://x.com/tech_world18/status/1946061487853936732" target="_blank" rel="noopener">→ イベントまとめ</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="diary-date">1997/02/14</td>
+                  <td class="diary-entry">
+                    Nocode界隈の方から個人開発の挑戦にエールをいただきました。励みになります！
+                    <a href="https://x.com/yoshio_nocode/status/1874014838697189428" target="_blank" rel="noopener">→ Xで読む</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="diary-date">1997/03/05</td>
+                  <td class="diary-entry">
+                    個人開発で生活するためのヒントを公開しました。
+                    <a href="https://x.com/iritec_jp/status/1628935790909861889" target="_blank" rel="noopener">→ Xで読む</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="section" id="media">
+              <h2>◆ メディア掲載 ◆</h2>
+              <ul class="media-list">
+                <li>
+                  <a href="https://logmi.jp/main/technology/330426" target="_blank" rel="noopener">
+                    ログミーTech：個人開発者としての挑戦と継続のコツ
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.lifehacker.jp/article/2212-how-i-work-menta-irie/" target="_blank" rel="noopener">
+                    Lifehacker：How I Work - MENTA創業者 入江慎吾
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="section" id="videos">
+              <h2>◆ 動画＆note ◆</h2>
+              <div class="media-grid">
+                <div class="media-card">
+                  <div class="media-title">Youtube</div>
+                  <a href="https://www.youtube.com/watch?v=8xJ3lkFu5hY" target="_blank" rel="noopener">
+                    <img src="assets/thumb_youtube.gif" alt="YouTube動画" class="media-thumb">
+                  </a>
+                  <p class="media-desc">個人開発やサービスづくりのヒントを語った動画です。</p>
+                </div>
+                <div class="media-card">
+                  <div class="media-title">note連載</div>
+                  <ul class="note-links">
+                    <li><a href="https://note.com/iritec/n/n5a5adf2d4dc2" target="_blank" rel="noopener">個人開発で月100万円稼ぐまで</a></li>
+                    <li><a href="https://note.com/iritec/n/nd06b5dea88fa" target="_blank" rel="noopener">サービス売却までの舞台裏</a></li>
+                    <li><a href="https://note.com/iritec/n/nf7642bf62ea5" target="_blank" rel="noopener">個人開発者の生活と仕事術</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="section" id="consulting">
+              <h2>◆ ご相談窓口 ◆</h2>
+              <div class="consulting-box">
+                <p class="consulting-lead">
+                  Webサービス、スマホアプリ開発の相談からモックアップまで！お気軽にどうぞ♪
+                </p>
+                <a href="https://solo.onl/lancers_irie" target="_blank" rel="noopener" class="consulting-link">
+                  <img src="assets/bnr_consult.gif" alt="ご相談はこちら" class="consulting-banner">
+                </a>
+                <p class="consulting-note">
+                  ※ ちょっとした一言メッセージでもOK。掲示板でも相談受け付けます！
+                </p>
+              </div>
+            </div>
+
+            <div class="section" id="guestbook">
+              <h2>◆ ゲストブック ◆</h2>
+              <p class="section-intro">
+                本物のCGI掲示板は準備中ですが、ブラウザ内で足あとを残せる仮設ノートを置いておきます。
+              </p>
+              <div class="construction-note">
+                <img src="assets/guestbook_work.gif" alt="Coming soon" class="construction-img">
+                <p>正式版は別途公開予定。それまでは下のフォームから一言どうぞ！</p>
+              </div>
+              <form class="guestbook-form" id="guestbook-form">
+                <label>お名前（ハンドルネームOK）<br>
+                  <input type="text" name="name" maxlength="20" required>
+                </label>
+                <label>ひとことメッセージ<br>
+                  <textarea name="message" rows="4" maxlength="140" required></textarea>
+                </label>
+                <button type="submit">足あとを残す☆</button>
+              </form>
+              <p class="guestbook-note">※ 投稿はこのブラウザにだけ保存されます。実際の掲示板は現在工事中です。</p>
+              <ul class="guestbook-entries" id="guestbook-entries"></ul>
+            </div>
+
+            <div class="section" id="links">
+              <h2>◆ リンク集 ◆</h2>
+              <table class="links-table" cellspacing="0" cellpadding="4">
+                <tr>
+                  <td class="link-cat">SNS</td>
+                  <td>
+                    <a href="https://x.com/iritec_jp" target="_blank" rel="noopener">X（@iritec_jp）</a> /
+                    <a href="https://www.youtube.com/@kojin-product" target="_blank" rel="noopener">YouTube</a> /
+                    <a href="https://note.com/iritec/m/mf70a388ea7ce" target="_blank" rel="noopener">noteマガジン</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="link-cat">おすすめ</td>
+                  <td>
+                    <a href="https://solo.onl/" target="_blank" rel="noopener">SOLO公式サイト</a><br>
+                    <a href="https://startpack.shingoirie.com/" target="_blank" rel="noopener">Startpack</a><br>
+                    <a href="https://lofi.shingoirie.com/" target="_blank" rel="noopener">Lofiで作業用BGM♪</a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="footer">
+              <p>Copyright &copy; 1997-2025 Shingo Irie.</p>
+              <p>リンクフリー／バナーはお持ち帰りOK☆　ご意見・ご感想は掲示板完成までメールにてどうぞ！</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script type="text/javascript">
+    (function () {
+      const counterEl = document.getElementById('visit-counter');
+      try {
+        const storageKey = 'shingoirie90sCounter';
+        const base = 12345;
+        let count = parseInt(localStorage.getItem(storageKey) || base, 10);
+        if (Number.isNaN(count)) count = base;
+        count += 1;
+        localStorage.setItem(storageKey, count);
+        if (counterEl) {
+          counterEl.textContent = String(count).padStart(8, '0');
+        }
+      } catch (err) {
+        if (counterEl) counterEl.textContent = '00012345';
+      }
+
+      const updatedEl = document.getElementById('last-updated');
+      if (updatedEl) {
+        const parsed = new Date(document.lastModified);
+        if (!Number.isNaN(parsed.getTime())) {
+          const formatter = new Intl.DateTimeFormat('ja-JP', { year: 'numeric', month: '2-digit', day: '2-digit' });
+          updatedEl.textContent = formatter.format(parsed);
+        }
+      }
+
+      const guestbookKey = 'shingoirie90sGuestbook';
+      const guestbookForm = document.getElementById('guestbook-form');
+      const guestbookList = document.getElementById('guestbook-entries');
+
+      function renderGuestbook(entries) {
+        if (!guestbookList) return;
+        guestbookList.innerHTML = '';
+        if (!entries.length) {
+          const empty = document.createElement('li');
+          empty.className = 'guestbook-empty';
+          empty.textContent = 'まだ足あとがありません。最初の一言を残してね！';
+          guestbookList.appendChild(empty);
+          return;
+        }
+        entries.forEach(function (entry) {
+          const item = document.createElement('li');
+          item.className = 'guestbook-item';
+          const name = document.createElement('span');
+          name.className = 'guestbook-name';
+          name.textContent = entry.name + ' さん';
+          const date = document.createElement('span');
+          date.className = 'guestbook-date';
+          date.textContent = entry.date;
+          const message = document.createElement('p');
+          message.className = 'guestbook-message';
+          message.textContent = entry.message;
+          item.appendChild(name);
+          item.appendChild(date);
+          item.appendChild(message);
+          guestbookList.appendChild(item);
+        });
+      }
+
+      let guestbookEntries = [];
+      try {
+        const saved = localStorage.getItem(guestbookKey);
+        if (saved) {
+          const parsedEntries = JSON.parse(saved);
+          if (Array.isArray(parsedEntries)) {
+            guestbookEntries = parsedEntries;
+          }
+        }
+      } catch (err) {
+        guestbookEntries = [];
+      }
+
+      renderGuestbook(guestbookEntries);
+
+      if (guestbookForm) {
+        guestbookForm.addEventListener('submit', function (event) {
+          event.preventDefault();
+          const formData = new FormData(guestbookForm);
+          const name = String(formData.get('name') || '').trim();
+          const message = String(formData.get('message') || '').trim();
+          if (!name || !message) {
+            alert('お名前とメッセージを入力してくださいネ');
+            return;
+          }
+          const now = new Date();
+          const timeStamp = new Intl.DateTimeFormat('ja-JP', {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit'
+          }).format(now);
+          guestbookEntries.unshift({
+            name: name.slice(0, 20),
+            message: message.slice(0, 140),
+            date: timeStamp
+          });
+          guestbookEntries = guestbookEntries.slice(0, 20);
+          try {
+            localStorage.setItem(guestbookKey, JSON.stringify(guestbookEntries));
+          } catch (err) {
+            // 保存できない場合は無視
+          }
+          renderGuestbook(guestbookEntries);
+          guestbookForm.reset();
+        });
+      }
+    }());
+
+    function toggleBgm() {
+      const player = document.getElementById('bgm-player');
+      if (!player) return;
+      if (player.paused) {
+        player.currentTime = 0;
+        player.play().catch(function () {
+          alert('自動再生がブロックされました。再度ボタンを押してね☆');
+        });
+      } else {
+        player.pause();
+      }
+    }
+  </script>
+  </body>
+</html>
